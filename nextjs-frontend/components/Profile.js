@@ -42,9 +42,9 @@ const Profile = ( {profile, socail} ) => {
               <div className="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
 
                 {socail.map((item, index)=>{
-                  return (<a href={item.href} key={index} className="pl-4" target="_blank">
+                  return (<Link href={item.href} key={index}><a className="pl-4" target="_blank" rel="noopener noreferrer">
                   <i className= {`bx bxl-${item.name} text-2xl text-white hover:text-yellow`}></i>
-                </a>)
+                </a></Link>)
                 })}
               </div>
             </div>

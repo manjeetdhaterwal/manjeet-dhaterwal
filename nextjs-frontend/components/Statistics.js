@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const Statistics = ( {statistics}) => {
   return (
@@ -9,7 +10,7 @@ const Statistics = ( {statistics}) => {
           <div className="grid grid-cols-2 gap-5 md:gap-8 xl:grid-cols-4 xl:gap-5">
             <div className="flex flex-col items-center justify-center text-center md:flex-row md:text-left">
               <div>
-                <img src="/assets/img/icon-project.svg" className="mx-auto h-12 w-auto md:h-20" alt="icon project" />
+                <Image src="/assets/img/icon-project.svg" className="mx-auto h-12 w-auto md:h-20" width="230px" height="150px" alt="icon project" />
               </div>
               <div className="pt-5 md:pl-5 md:pt-0">
                 <h1 className="font-body text-2xl font-bold text-primary md:text-4xl">
@@ -23,7 +24,7 @@ const Statistics = ( {statistics}) => {
 
             <div className="flex flex-col items-center justify-center text-center md:flex-row md:text-left">
               <div>
-                <img src="/assets/img/icon-award.svg" className="mx-auto h-12 w-auto md:h-20" alt="icon award" />
+                <Image src="/assets/img/icon-award.svg" className="mx-auto h-12 w-auto md:h-20" width="230px" height="150px"   alt="icon award" />
               </div>
               <div className="pt-5 md:pl-5 md:pt-0">
                 <h1 className="font-body text-2xl font-bold text-primary md:text-4xl">
@@ -38,7 +39,7 @@ const Statistics = ( {statistics}) => {
             <div
               className="mt-6 flex flex-col items-center justify-center text-center md:mt-10 md:flex-row md:text-left lg:mt-0">
               <div>
-                <img src="/assets/img/icon-happy.svg" className="mx-auto h-12 w-auto md:h-20"
+                <Image src="/assets/img/icon-happy.svg" className="mx-auto h-12 w-auto md:h-20" width="230px" height="150px" 
                   alt="icon happy clients" />
               </div>
               <div className="pt-5 md:pl-5 md:pt-0">
@@ -54,7 +55,7 @@ const Statistics = ( {statistics}) => {
             <div
               className="mt-6 flex flex-col items-center justify-center text-center md:mt-10 md:flex-row md:text-left lg:mt-0">
               <div>
-                <img src="/assets/img/icon-puzzle.svg" className="mx-auto h-12 w-auto md:h-20" alt="icon puzzle" />
+                <Image src="/assets/img/icon-puzzle.svg" className="mx-auto h-12 w-auto md:h-20" width="230px" height="150px"  alt="icon puzzle" />
               </div>
               <div className="pt-5 md:pl-5 md:pt-0">
                 <h1 className="font-body text-2xl font-bold text-primary md:text-4xl">

@@ -1,6 +1,8 @@
 import React from 'react'
 import imageUrlBuilder from '@sanity/image-url'
 import { createClient } from "next-sanity";
+import Link from 'next/link'
+import Image from 'next/image'
 
 const About = ({ about, education }) => {
   const client = createClient({
@@ -60,7 +62,7 @@ const About = ({ about, education }) => {
             Who am I?
           </h2>
           <h4 className="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-            I'm {about.name}, {about.job}
+            I&apos;m {about.name}, {about.job}
           </h4>
           <p className="pt-6 font-body leading-relaxed text-grey-20">
             {about.desc}
@@ -80,20 +82,28 @@ const About = ({ about, education }) => {
                 <i className="fa fa-hackerrank text-2xl text-primary hover:text-yellow"></i>
               </a> */}
 
-              <a href="https://auth.geeksforgeeks.org/user/manjeetdhaterwal/practice" className="pl-4" target="_blank">
-                <img src='/assets/img/gfg-logo.png' className="h-10 hover:text-yellow"></img>
-              </a>
+              <Link href="https://auth.geeksforgeeks.org/user/manjeetdhaterwal/practice" >
+                <a target="_blank" className="mr-4" rel="noopener noreferrer">
+                  <Image src='/assets/img/gfg-logo.png' className="h-10 hover:text-yellow" width="45px" height="45px" ></Image>
+                </a>
+              </Link>
 
-              <a href="https://www.hackerrank.com/manjeetdhaterwal" className="pl-4" target="_blank">
-                <img src='/assets/img/HackerRank_Icon.svg' className="h-10 hover:text-yellow"></img>
-              </a>
+              <Link href="https://www.hackerrank.com/manjeetdhaterwal" >
+                <a target="_blank" className="mr-4" rel="noopener noreferrer">
+                  <Image src='/assets/img/HackerRank_Icon.svg' className="h-10 hover:text-yellow" width="45px" height="45px"></Image>
+                </a>
+              </Link>
 
-              <a href="https://leetcode.com/manjeetd13/" className="pl-4" target="_blank">
-                <img src='/assets/img/leetcode-logo.webp' className="h-10 hover:text-yellow"></img>
-              </a>
-              <a href="https://www.interviewbit.com/profile/manjeetdhaterwal" className="pl-4" target="_blank">
-                <img src='/assets/img/interviewbit-logo.webp' className="h-10 hover:text-yellow"></img>
-              </a>
+              <Link href="https://leetcode.com/manjeetd13/" className="pl-4" target="_blank">
+                <a target="_blank" className="mr-4" rel="noopener noreferrer">
+                  <Image src='/assets/img/leetcode-logo.webp' className="h-10 hover:text-yellow" width="45px" height="45px"></Image>
+                </a>
+              </Link>
+              <Link href="https://www.interviewbit.com/profile/manjeetdhaterwal" className="pl-4" target="_blank">
+                <a target="_blank" className="mr-4" rel="noopener noreferrer">
+                  <Image src='/assets/img/interviewbit-logo.webp' className="h-10 hover:text-yellow" width="45px" height="45px"></Image>
+                </a>
+              </Link>
             </div>
           </div>
 

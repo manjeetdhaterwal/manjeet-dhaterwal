@@ -3,6 +3,8 @@ import imageUrlBuilder from '@sanity/image-url'
 import { createClient } from "next-sanity";
 import styles from '../styles/Project.module.css'
 import { useState } from 'react';
+import Link from 'next/link'
+import Image from 'next/image'
 
 const Project = ({ Projects }) => {
   const client = createClient({
@@ -12,7 +14,7 @@ const Project = ({ Projects }) => {
   });
   const builder = imageUrlBuilder(client)
 
-   const [isHovering, setIsHovered] = useState(false);
+  const [isHovering, setIsHovered] = useState(false);
   const onMouseEnter = () => setIsHovered(true);
   const onMouseLeave = () => setIsHovered(false);
 
@@ -39,19 +41,29 @@ const Project = ({ Projects }) => {
         {/* <a href= {Projects[0].href} className="mx-auto transform transition-all hover:scale-105 md:mx-0">
           <img src={builder.image(Projects[0].image).width(200).url()} className="w-full shadow" alt="portfolio image" />
         </a>  */}
-        <a href="https://manjeetdhaterwal.github.io/weather-app-react/" className="mx-auto transform transition-all hover:scale-105 md:mx-0" target="_blank">
-          <img src="/assets/img/weatherapp-image.jpeg" className="w-full shadow" alt="weatherapp image" />
-          {/* <div className={styles.overlay}>My Name is John</div> */}
-        </a>
-        <a href="https://manjeetdhaterwal.github.io/react-todos-list/" className="mx-auto transform transition-all hover:scale-105 md:mx-0" target="_blank">
-          <img src="/assets/img/todolist.png" className="w-full shadow" alt="todolist image" />
-        </a>
-        <a href="https://github.com/manjeetdhaterwal/LibraryManagemnet" className="mx-auto transform transition-all hover:scale-105 md:mx-0" target="_blank">
-          <img src="/assets/img/library-image.png" className="w-full shadow" alt="portfolio image" />
-        </a>
-        <a href="/" className="mx-auto transform transition-all hover:scale-105 md:mx-0" target="_blank">
-          <img src="/assets/img/ichatapp-image.png" className="w-full shadow" alt="portfolio image" />
-        </a>
+        <Link href="https://manjeetdhaterwal.github.io/weather-app-react/">
+          <a className="mx-auto transform transition-all hover:scale-105 md:mx-0" target="_blank" rel="noopener noreferrer">
+            <Image src="/assets/img/weatherapp-image.jpeg" className="w-full shadow" width="650px" height="400px" alt="weatherapp image" />
+            {/* <div className={styles.overlay}>My Name is John</div> */}
+          </a>
+        </Link>
+
+        <Link href="https://manjeetdhaterwal.github.io/react-todos-list/">
+          <a className="mx-auto transform transition-all hover:scale-105 md:mx-0" target="_blank" rel="noopener noreferrer">
+            <Image src="/assets/img/todolist.png" className="w-full shadow" width="650px" height="400px" alt="todolist image" />
+          </a>
+        </Link>
+
+        <Link href="https://github.com/manjeetdhaterwal/LibraryManagemnet">
+          <a className="mx-auto transform transition-all hover:scale-105 md:mx-0" target="_blank" rel="noopener noreferrer">
+            <Image src="/assets/img/library-image.png" className="w-full shadow" width="650px" height="400px" alt="portfolio image" />
+          </a>
+        </Link>
+        <Link href="/">
+          <a className="mx-auto transform transition-all hover:scale-105 md:mx-0" target="_blank" rel="noopener noreferrer">
+            <Image src="/assets/img/ichatapp-image.png" className="w-full shadow" width="650px" height="400px" alt="portfolio image" />
+          </a>
+        </Link>
 
         {/* <figure className="imghvr-stack-up">
           <img src="/assets/img/weatherapp-image.jpeg" alt="example-image"/>

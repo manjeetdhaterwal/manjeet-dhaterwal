@@ -43,7 +43,7 @@ const Footer = () => {
             <h3
               className="text-center font-header text-3xl uppercase leading-tight tracking-wide text-white sm:text-4xl lg:text-5xl">
               Keep <span className="font-bold">up-to-date</span> <br />
-              with what I'm up to
+              with what I&apos;m up to
             </h3>
             <form className="mt-6 flex flex-col justify-center sm:flex-row">
               <input className="w-full rounded px-4 py-3 font-body text-black sm:w-2/5 sm:py-4 lg:w-1/3" type="email"

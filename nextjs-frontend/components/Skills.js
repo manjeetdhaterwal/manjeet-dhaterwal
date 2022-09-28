@@ -4,10 +4,10 @@ const Skills = ({ skill }) => {
     return (
         <div className="container py-16 md:py-20 bg-gray-50" id="skills">
             <h2 className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
-                Here's what I'm good at
+                Here&apos;s what I&apos;m good at
             </h2>
             <h3 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-                Here's what I rate myself
+                Here&apos;s what I rate myself
             </h3>
 
             <div className="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2">
