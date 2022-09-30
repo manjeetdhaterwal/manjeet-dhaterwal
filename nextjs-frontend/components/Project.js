@@ -41,29 +41,38 @@ const Project = ({ Projects }) => {
         {/* <a href= {Projects[0].href} className="mx-auto transform transition-all hover:scale-105 md:mx-0">
           <img src={builder.image(Projects[0].image).width(200).url()} className="w-full shadow" alt="portfolio image" />
         </a>  */}
+        <div className='border-solid border-2 border-blue-800'>
         <Link href="https://manjeetdhaterwal.github.io/weather-app-react/">
           <a className="mx-auto transform transition-all hover:scale-105 md:mx-0" target="_blank" rel="noopener noreferrer">
             <Image src="/assets/img/weatherapp-image.jpeg" className="w-full shadow" width="650px" height="400px" alt="weatherapp image" />
             {/* <div className={styles.overlay}>My Name is John</div> */}
           </a>
         </Link>
+        </div>
 
+        <div className='border-solid border-2 border-blue-800'>
         <Link href="https://manjeetdhaterwal.github.io/react-todos-list/">
           <a className="mx-auto transform transition-all hover:scale-105 md:mx-0" target="_blank" rel="noopener noreferrer">
             <Image src="/assets/img/todolist.png" className="w-full shadow" width="650px" height="400px" alt="todolist image" />
           </a>
         </Link>
+        </div>
 
+        <div className='border-solid border-2 border-blue-800'>
         <Link href="https://github.com/manjeetdhaterwal/LibraryManagemnet">
           <a className="mx-auto transform transition-all hover:scale-105 md:mx-0" target="_blank" rel="noopener noreferrer">
             <Image src="/assets/img/library-image.png" className="w-full shadow" width="650px" height="400px" alt="portfolio image" />
           </a>
         </Link>
+        </div>
+
+        <div className='border-solid border-2 border-blue-800'>
         <Link href="/">
           <a className="mx-auto transform transition-all hover:scale-105 md:mx-0" target="_blank" rel="noopener noreferrer">
             <Image src="/assets/img/ichatapp-image.png" className="w-full shadow" width="650px" height="400px" alt="portfolio image" />
           </a>
         </Link>
+        </div>
 
         {/* <figure className="imghvr-stack-up">
           <img src="/assets/img/weatherapp-image.jpeg" alt="example-image"/>

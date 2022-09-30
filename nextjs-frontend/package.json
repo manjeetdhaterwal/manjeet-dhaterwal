@@ -16,8 +16,10 @@
     "next-sanity": "^0.8.4",
     "nodemailer": "^6.7.8",
     "react": "18.2.0",
+    "react-countup": "^6.3.1",
     "react-dom": "18.2.0",
     "react-simple-typewriter": "^4.0.2",
+    "react-visibility-sensor": "^5.1.1",
     "use-typewriter-hook": "^3.1.1"
   },
   "devDependencies": {

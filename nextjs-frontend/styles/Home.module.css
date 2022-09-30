@@ -115,6 +115,17 @@
   }
 }
 
+@media (max-width: 768px) {
+  .main_div_bg{
+    height: 600px;
+  }
+
+  .main_heading_h1{
+    height: 100px;
+    color: #5540af;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   .card,
   .footer {

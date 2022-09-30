@@ -33,6 +33,8 @@ export default function Home({ profile, socail, about, education, projects, work
 
   return (
     <>
+    {/* <style>{styles}</style> */}
+
       <Script src="/assets/js/main.js"></Script>
       <Head>
         <meta charset="utf-8" />
@@ -108,7 +110,7 @@ export default function Home({ profile, socail, about, education, projects, work
       <NavBar />
       <div className="pointer-events-none fixed inset-0 z-70 min-h-screen bg-black bg-opacity-70 opacity-0 transition-opacity lg:hidden" />
       <div>
-        <div className="relative bg-cover bg-center bg-no-repeat py-8" style={{ backgroundImage: "url(/assets/img/bg-hero.jpg)" }}>
+        <div className="relative bg-cover bg-center bg-no-repeat py-8 main_div_bg" style={{ backgroundImage: "url(/assets/img/bg-hero.jpg)"}}>
           <div className="absolute inset-0 z-20 bg-gradient-to-r from-hero-gradient-from  bg-cover bg-center bg-no-repeat" />
           <Profile profile={profile} socail={socail} />
         </div>
